@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WifDemo" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="AccessControlDemo2">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="admin" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEG/I6MCNckeUSDbDwCY2v+YwDQYJKoZIhvcNAQEBBQAEggEAM+Cq8tdBDvTFF4R3xZXHACb/L7piiCbJANgkAIL4t90pw5eduQ9UF9Wz9igYVYufF94+E5z6p/jBYytfdG4BEWIC8QX2gnzie1lcUewljXCELTAld64EwuEGQvVeQfGYSPeH/vBD+5QGKkRo+A9W3kfhRZnQmGMKPy/Zc4gvtPb+TAfODaPTg2gqXtLHSysYKSBBKG5qtEn3zpNWUwzGSjSjHGS6aJFq7TDHyGqrO9F0hVLvdwiHg75vP2jdcZku1jW7wZlhCaqDPnsSDqvMM4g4XHX7+jnCaOvuCOUAzfdrMETh31zi00z7PM7CAqJOSUDnBl6GPEHyqQRlF5K09jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECJZpovB0rDocgBAke36uL82zJH7cMVVNaOTW" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-04-28T23:59:59.0000000+02:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="9D273E571AD7F798AE695E2E4D904369097BBC9A" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
